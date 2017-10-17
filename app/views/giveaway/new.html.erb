@@ -1,0 +1,17 @@
+<%= form_tag(giveaway_decide_path) do %>
+  <p>
+  	<%= label_tag(:media_shortcode, "Enter Instagram media shortcode, https://www.instagram.com/p/") %>
+  	<%= text_field_tag(:media_shortcode) %>
+  </p>
+  <p>
+  	<%= label_tag(:winner_count, "Enter number of winners:") %>
+  	<%= text_field_tag(:winner_count) %>
+  </p>
+  <p>
+  	<%= label_tag(:follows, "Enter comma-separated list of usernames that participants must follow:") %>
+  	<%= text_field_tag(:follows) %>
+  </p>
+  <p>
+  	<%= submit_tag("Decide!") %>
+  <p>
+<% end %>
